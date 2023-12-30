@@ -98,7 +98,7 @@ header article:last-child img {
   box-shadow: 0 5px 10px rgba(245, 245, 220, 0.425);
 }
 
-#portfolio {
+#content {
   margin-top: 100px;
   color: #070507;
   width: 100vw;
@@ -107,14 +107,14 @@ header article:last-child img {
   align-items: center;
 }
 
-#portfolio #case-study {
+#content #heading {
   text-align: center;
   width: 40%;
 }
-#portfolio #case-study h1 {
+#content #heading h1 {
   font-size: 4.2rem;
 }
-#portfolio #case-study p {
+#content #heading p {
   color: #7c7b7c;
   margin-top: 20px;
   font-size: 1.4rem;
