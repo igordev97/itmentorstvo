@@ -73,6 +73,7 @@ header article p {
   padding-right: 80px;
 }
 header article button {
+  z-index: 1;
   color: #fff;
   background-color: #408e02;
   padding: 15px 45px;
@@ -82,9 +83,34 @@ header article button {
   box-shadow: 2px 5px 10px #418e02a9;
   cursor: pointer;
   transition: all 0.3s linear;
+  position: relative;
+}
+header article button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 300ms ease-in-out;
+  background-color: rgb(37, 131, 194);
 }
 header article button:hover {
   box-shadow: 2px 5px 30px #418e02a9;
+}
+#arrow {
+  transition: transform 0.3s ease-in-out;
+}
+header article button:hover #arrow {
+  transform: translateX(5px);
+}
+
+header article button:focus::before,
+header article button:hover::before {
+  transform: scaleX(1);
 }
 header article {
   display: flex;
