@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #header {
@@ -62,7 +62,7 @@ header article {
 }
 
 header article h1 {
-  font-size: 6.4rem;
+  font-size: 4.4rem;
   margin-bottom: 30px;
 }
 header article p {
